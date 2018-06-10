@@ -7,6 +7,8 @@ class Song
   attr_accessor :name
   attr_reader :artist
 
+  include Paramable
+
   @@songs = []
 
   def initialize
